@@ -9,46 +9,79 @@
 </head>
 <body>
     
-    Header Logo
-
-    - header link one
-    - header link two
-    - header link three
-
-
-    This website is awesome
-
-    This website has some subtext that goes here under the main title.
-    It's a smaller font and the color is lower contrast.
-
-    Sign up
-
-    this is a placeholder for an image
+    <header class="header">
+        <div class="container flex sb">
+            <p class="header-logo">Header Logo</p>
+            <ul class="header-links flex">
+                <li><a href="#" class="header-link">header link one</a></li>
+                <li><a href="#" class="header-link">header link two</a></li>
+                <li><a href="#" class="header-link">header link three</a></li>
+            </ul>
+        </div>
+    </header>
 
 
-    Some random information
-
-    - this is some subtext under an illustration or image
-    - this is some subtext under an illustration or image
-    - this is some subtext under an illustration or image
-    - this is some subtext under an illustration or image
-
-
-    This is an inspiring quote, or a testimonial from a customer. Maybe it's
-    just filling up space, or maybe people will actually read it. Who knows? All
-    I know is that it looks nice.
-
-    - Thor, God of Thunder
+    <div class="hero">
+        <div class="container flex">
+            <div class="hero__text">
+                <h1 class="hero__title">This website is awesome</h1>
+                <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+                <a href="#" class="button">Sign up</a>
+            </div>
+            <div class="hero__img">this is a placeholder for an image</div>
+        </div>
+    </div>
 
 
-    Call to action! It's time!
+    <div class="info">
+        <div class="container">
+            <h2 class="info__title">Some random information</h2>
+            <ul class="info__list flex">
+                <li class="info__item">
+                    <div class="info__box"></div>
+                    <p class="info__text">this is some subtext under an illustration or image</p>
+                </li>
+                <li class="info__item">
+                    <div class="info__box"></div>
+                    <p class="info__text">this is some subtext under an illustration or image</p>
+                </li>
+                <li class="info__item">
+                    <div class="info__box"></div>
+                    <p class="info__text">this is some subtext under an illustration or image</p>
+                </li>
+                <li class="info__item">
+                    <div class="info__box"></div>
+                    <p class="info__text">this is some subtext under an illustration or image</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    Sign up for our product by clicking that button right over there!
 
-    Sign up
+    <div class="quote">
+        <div class="container">
+            <figure>
+                <blockquote>
+                    <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+                </blockquote>
+                <p>- Thor, God of Thunder</p>
+            </figure>
+        </div>
+    </div>
 
 
-    Copyright &copy; The Odin Project 2021
+    <div class="call-to-action">
+        <div class="container">
+            <h2>Call to action! It's time!</h2>
+            <p>Sign up for our product by clicking that button right over there!</p>
+            <a href="#" class="button">Sign up</a>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        Copyright &copy; The Odin Project 2021
+    </footer>
 
 </body>
 </html>
