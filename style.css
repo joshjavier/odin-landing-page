@@ -1,3 +1,5 @@
+/* BASE */
+
 *, *::before, *::after {
   box-sizing: border-box;
   font-family: inherit;
@@ -5,4 +7,178 @@
   color: inherit;
   padding: 0;
   margin: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  filter: contrast(1.2) opacity(0.8);
+}
+
+:focus-visible {
+  outline: 0.4em solid orange;
+  outline-offset: 2px;
+}
+
+
+
+
+
+/* LAYOUT */
+
+.container {
+  width: 80%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+
+/* Header */
+
+.header {
+  padding-top:    18px;
+  padding-bottom: 18px;
+}
+
+.header > .container {
+  align-items: center;
+}
+
+.header-links {
+  gap: 24px;
+}
+
+
+/* Hero section */
+
+.hero {
+  padding-top:    100px;
+  padding-bottom: 100px;
+}
+
+.hero > .container {
+  gap: 40px;
+}
+
+.hero__text {
+  width: 50%;
+}
+
+.hero__text > * + * {
+  margin-top: 1em;
+}
+
+.hero__img {
+  width: 580px;
+  background-color: #6d747d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.info__list {
+  margin-top: 48px;
+  gap: 48px;
+}
+
+.info,
+.quote {
+  padding: 48px;
+}
+
+
+/* Footer */
+
+.footer {
+  text-align:   center;
+  padding-top:    32px;
+  padding-bottom: 32px;
+
+}
+
+
+
+
+
+/* COLORS AND FONTS */
+
+.header,
+.footer,
+.hero,
+.info,
+.call-to-action {
+  font-size: 1.125rem; /* 18px */
+}
+
+.header,
+.footer,
+.hero {
+  background-color: #1F2937;
+  color: #E5E7EB;
+}
+
+.header-logo,
+.hero__title {
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
+.header-logo {
+  font-size: 1.5rem; /* 24px */
+}
+
+.hero__title {
+  font-size: 3rem; /* 48px */
+}
+
+
+.info__title {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 900;
+  color: #1F2937;
+  text-align: center;
+}
+
+.info__title::after {
+  content: ".";
+}
+
+
+.quote {
+  background-color: #E5E7EB;
+}
+
+
+
+
+/* COMPONENTS */
+
+.button {
+  display: inline-block;
+  background-color: #3882F6;
+  color: white;
+  padding: 8px 34px;
+  border-radius: 8px;
+  font-weight: 700;
 }
